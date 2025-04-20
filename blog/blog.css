@@ -1,0 +1,100 @@
+body {
+    background-color: #f8f9fa;
+}
+
+
+
+.featured-image {
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.article-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.tag-badge {
+    transition: all 0.3s ease;
+}
+
+.tag-badge:hover{
+    transform: translateY(-2px);
+}
+
+.comment-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* รูปภาพผู้เขียน */
+.author-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* รูปภาพความคิดเห็น */
+.comment-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* การจัดวางเนื้อหา */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.social-links .btn {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ปุ่มเขียนความคิดเห็น */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* เอฟเฟกต์โฮเวอร์ */
+.hover-text-primary:hover {
+    color: #0d6efd !important;
+    text-decoration: underline;
+}
+
+.fs-14 {
+    font-size: 0.875rem; /* ~14px */
+}
+
+/* เส้นคั่น */
+.border-bottom {
+    border-color: #dee2e6 !important;
+}
