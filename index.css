@@ -1,0 +1,267 @@
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+}
+
+body {
+    background: linear-gradient(135deg, #63aef6 0%, #4ECDC4 100%);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    min-height: 100vh;
+}
+
+.search-box {
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.search-box::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+ /* ส่วนของตะกร้าสินค้า */
+ .cart-icon {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.cart-icon .btn-cart {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.cart-icon .btn-cart:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.cart-icon .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #FF6B6B;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*โปรโมชั่น*/
+.promo-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+/*หมวดหมู่อาหาร*/
+.category-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .category-img-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 3px solid #fff;
+  }
+  
+  .category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-name {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .category-card:hover .category-img {
+    transform: scale(1.1);
+  }
+  
+  .category-card:hover .category-overlay {
+    opacity: 0.5;
+  }
+  
+  .category-card:hover .category-name {
+    color:white;
+  }
+
+/*เมนูอาหาร*/
+.food-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+/*รีวิว*/
+.review-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  .rating {
+    font-size: 0.9rem;
+  }
+  .review-card img {
+    object-fit: cover;
+  }
+
+/*บล็อก*/
+.blog-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/*แบบฟอร์ม*/
+.custom-input,
+.custom-textarea {
+  border-radius: 12px; 
+  border: 1px solid #dee2e6; 
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.custom-input:focus,
+.custom-textarea:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); 
+}
+
+.custom-btn {
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; 
+}
+
+/*ไอคอนแอป*/
+.social-icon {
+  transition: transform 0.3s, opacity 0.3s;
+  font-size: 1.5rem;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.floating-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/*รายการสินค้า*/
+.price-text {
+   font-size: 1.1rem;
+   color: #0d6efd; 
+}
+.product-card img {
+  flex-shrink: 0;
+}
+.form-control-sm {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  height: calc(1.5em + 0.5rem + 2px);
+}
+
+
+/*สลิปเงิน*/
+.receipt-box {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+}
+.receipt-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.line {
+  border-top: 1px dashed #ccc;
+  margin: 15px 0;
+}

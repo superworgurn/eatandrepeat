@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <title>ชิมไปเรื่อย</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="/index.css" rel="stylesheet">
+   <!--icon-->
+   <link rel="icon" href="/Logo/1000052579.jpg" type="image/png">
+</head>
+
+<!-- Header Section -->
+<body class="p-3">
+  <header class="mb-4">
+      <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="/index.html">
+              <img src="/Logo/1000052579.jpg" 
+              alt="logo" 
+              class="img-fluid" 
+              style="width: 80px; height: auto; border-radius: 20%;">
+            </a>
+          </div>
+
+          <!-- Search Box -->
+          <div class="position-relative flex-grow-1 mx-3">
+              <input type="text" 
+                     class="form-control search-box" 
+                     placeholder="🔍 ค้นหาร้านอาหารหรือเมนูโปรด...">
+          </div>
+
+          <!-- Right Side Group -->
+          <div class="d-flex align-items-center gap-3">
+              <!-- ปุ่มตำแหน่ง -->
+              <button class="btn btn-outline-light rounded-pill px-4">
+                  <i class="bi bi-geo-alt me-2"></i>เลือกตำแหน่ง
+              </button>
+              
+              <!-- ตะกร้าสินค้า -->
+              <div class="cart-icon position-relative">
+                <a href="/market.html" 
+                   class="btn btn-outline-light rounded-circle p-2 d-inline-flex align-items-center justify-content-center"
+                   style="width: 40px; height: 40px;">
+                    <i class="bi bi-cart3"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
+                          style="font-size: 0.6em; padding: 0.35em 0.5em;">
+                        3
+                        <span class="visually-hidden">จำนวนสินค้า</span>
+                    </span>
+                </a>
+            </div>
+          </div>
+      </div>
+  </header>
+</body>
+
+<!-- Main Content -->
+    <main class="container-fluid">
+<!-- Promotions -->
+        <section class="row mb-4 g-3">
+            <div class="col-12 col-md-6">
+                <div class="promo-card">
+                    <img src="/picture/promote1.png" 
+                         class="img-fluid rounded-3" alt="Promotion">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="promo-card">
+                    <img src="/picture/promote2.jpg" 
+                         class="img-fluid rounded-3" alt="Promotion">
+                </div>
+            </div>
+        </section>
+
+<!-- Categories Section -->
+<section class="mb-5">
+    <div class="container">
+      <h4 class="mb-4 fw-bold text-center">หมวดหมู่ร้านอาหาร</h4>
+      
+      <div class="row g-4 justify-content-center">
+        <!-- อาหารญี่ปุ่น -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card">
+            <div class="category-img-container">
+              <img src="/picture/food1.webp" 
+              class="category-img" 
+              alt="อาหารญี่ปุ่น"
+              loading="lazy">
+              <div class="category-overlay"></div>
+            </div>
+            <div class="category-name">อาหารญี่ปุ่น</div>
+          </div>
+        </div>
+  
+        <!-- อาหารไทย -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card">
+            <div class="category-img-container">
+              <img src="/picture/food2.jpg" 
+              class="category-img" 
+              alt="อาหารไทย"
+              loading="lazy">
+              <div class="category-overlay"></div>
+            </div>
+            <div class="category-name">อาหารไทย</div>
+          </div>
+        </div>
+  
+        <!-- อาหารไทย 2 -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card">
+            <div class="category-img-container">
+              <img src="/picture/food.jpg" 
+                   class="category-img" 
+                   alt="อาหารเกาหลีใต้"
+                   loading="lazy">
+                   <div class="category-overlay"></div>
+            </div>
+            <div class="category-name">อาหารเกาหลีใต้</div>
+          </div>
+        </div>
+  
+        <!-- อาหารอิตาลี -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="category-card">
+            <div class="category-img-container">
+              <img src="/picture/food4.webp" 
+              class="category-img" 
+              alt="อาหารอิตาลี"
+                   loading="lazy">
+                   <div class="category-overlay"></div>
+            </div>
+            <div class="category-name">อาหารอิตาลี</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Recommended -->
+<section class="mb-4 mt-5">
+  <h4 class="mb-3 fw-bold">เมนูแนะนำประจำวัน</h4>
+  <div class="swiper myMenuSwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="food-card p-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0 text-dark">มัสมั่นไก่</h5>
+            <i class="bi bi-heart-fill text-danger fs-5"></i>
+          </div>
+          <div class="ratio ratio-16x9 rounded-3 mb-3 overflow-hidden">
+            <img src="/menu/menu1.png" class="img-fluid rounded-3 mb-3" alt="menu1">
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-warning">★★★★★</div>
+            <small class="text-muted">784 reviews</small>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">ราคา 250-400 THB</small>
+            <button class="btn btn-sm btn-outline-primary">ดูเพิ่มเติม</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="food-card p-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0 text-dark">ข้าวผัดอเมริกัน</h5>
+            <i class="bi bi-heart-fill text-danger fs-5"></i>
+          </div>
+          <div class="ratio ratio-16x9 rounded-3 mb-3 overflow-hidden">
+            <img src="/menu/menu2.jpg" class="img-fluid rounded-3 mb-3" alt="menu2">
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-warning">★★★★★</div>
+            <small class="text-muted">779 reviews</small>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">ราคา 250-400 THB</small>
+            <button class="btn btn-sm btn-outline-primary">ดูเพิ่มเติม</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="food-card p-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0 text-dark">กระเพราไก่ไข่ดาว</h5>
+            <i class="bi bi-heart-fill text-danger fs-5"></i>
+          </div>
+          <div class="ratio ratio-16x9 rounded-3 mb-3 overflow-hidden">
+            <img src="/menu/menu1.png" class="img-fluid rounded-3 mb-3" alt="menu3">
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-warning">★★★★★</div>
+            <small class="text-muted">799 reviews</small>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">ราคา 250-400 THB</small>
+            <button class="btn btn-sm btn-outline-primary">ดูเพิ่มเติม</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Navigation -->
+    <div class="swiper-button-next" style="color: white;"></div>
+    <div class="swiper-button-prev" style="color: white;"></div>
+  </div>
+</section>
+
+
+
+<!-- Reviews Section -->
+<section class="mb-4 mt-5">
+  <h4 class="mb-3 fw-bold">รีวิวล่าสุด</h4>
+  
+<!-- Review Items -->
+    <div class="row g-4">
+<!-- รีวิว 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="review-card card h-100 border-0 shadow-sm hover-shadow-lg transition">
+            <div class="card-body p-4 bg-light rounded-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/picture/people2.jpg" 
+                     class="rounded-circle me-3 border-2 border-light shadow-sm"
+                     width="50"
+                     height="50"
+                     alt="รีวิวจากสมชาย ใจดี">
+                     <div>
+                       <h5 class="fw-semibold mb-0">สมชาย ใจดี</h5>
+                       <div class="rating text-warning">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="text-secondary mb-0">อร่อยมากครับ! ได้ลองเมนูใหม่ที่เพิ่งเพิ่มเข้ามา บรรยากาศร้านก็ดีมากครับ</p>
+            </div>
+          </article>
+        </div>
+  
+<!-- รีวิว 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="review-card card h-100 border-0 shadow-sm hover-shadow-lg transition">
+            <div class="card-body p-4 bg-light rounded-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/picture/people1.jpg" 
+                     class="rounded-circle me-3 border-2 border-light shadow-sm"
+                     width="50"
+                     height="50"
+                     alt="รีวิวจากสมหญิง สุขใจ">
+                     <div>
+                  <h5 class="fw-semibold mb-0">สมหญิง สุขใจ</h5>
+                  <div class="rating text-warning">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="text-secondary mb-0">รสชาติอาหารเข้มข้น บริการดีมากค่ะ ร้านสะอาดน่านั่งสุดๆ</p>
+            </div>
+          </article>
+        </div>
+        
+<!-- รีวิว 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="review-card card h-100 border-0 shadow-sm hover-shadow-lg transition">
+            <div class="card-body p-4 bg-light rounded-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="/picture/people3.jpg" 
+                     class="rounded-circle me-3 border-2 border-light shadow-sm"
+                     width="50"
+                     height="50"
+                     alt="รีวิวจากวรัญญา จิตดี">
+                <div>
+                  <h5 class="fw-semibold mb-0">วรัญญา จิตดี</h5>
+                  <div class="rating text-warning">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="text-secondary mb-0">รสชาติดีมาก บริการดีเกินคุ้ม</p>
+            </div>
+          </article>
+        </div>
+      </div>
+  
+      <!-- View More Button (Optional) -->
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-primary px-4">
+          ดูรีวิวทั้งหมด <i class="fas fa-chevron-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+<!-- Blog Food -->
+<section class="mb-4">
+  <h4 class="mb-3 fw-bold">บทความอาหารน่าอ่าน</h4>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="blog-card p-3">
+          <img src="/picture/blog.jpg" class="img-fluid rounded-3 mb-3" alt="Blog Image" style="width:100%; height:40%;">
+          <h5 class="text-dark">เคล็ดลับการเลือกอาหารเพื่อสุขภาพในปี 2025</h5>
+          <small class="text-muted">โพสต์เมื่อ 1 วันที่แล้ว</small>
+          <p class="text-dark mt-2">พบกับเมนูเพื่อสุขภาพที่กำลังมาแรง...</p>
+          <a href="/blog/blog1.html" class="text-primary text-decoration-none">อ่านต่อ →</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="blog-card p-3">
+          <img src="/picture/blog2.jpg" class="img-fluid rounded-3 mb-3" alt="Blog Image" style="width:100%; height:40%;">
+          <h5 class="text-dark">เทรนด์อาหารใหม่ๆ ในปี 2025</h5>
+          <small class="text-muted">โพสต์เมื่อ 1 วันที่แล้ว</small>
+          <p class="text-dark mt-2">เทรนด์อาหารใหม่ๆ และ ที่กำลังมาแรงในปี 2025...</p>
+          <a href="/blog/blog2.html" class="text-primary text-decoration-none">อ่านต่อ →</a>
+        </div>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="blog-card p-3">
+          <img src="/picture/blog3.jpg" class="img-fluid rounded-3 mb-3" alt="Blog Image" style="width:100%; height:5%;">
+          <h5 class="text-dark">สูตรไก่วิงส์แซ่บของ KFC</h5>
+          <small class="text-muted">โพสต์เมื่อ 1 วันที่แล้ว</small>
+          <p class="text-dark mt-2">สูตรทำไก่วิงส์แซ่บ KFC แบบฉบับโฮมเมด...</p>
+          <a href="/blog/blog3.html" class="text-primary text-decoration-none">อ่านต่อ →</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="swiper-button-next" style="color: white;"></div>
+    <div class="swiper-button-prev" style="color: white;"></div>
+  </div>
+</section>
+
+<!--ส่งความคิดเห็น-->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-7 col-md-9"> <section>
+      <h4 class="mb-4 fw-bold text-center" style="letter-spacing: 1px;">แสดงความคิดเห็นของคุณ</h4>
+      
+      <!--รายละเอียด-->
+      <form class="bg-white p-4 p-md-5 rounded-3 shadow-lg needs-validation">
+        <div class="mb-4">
+          <label for="name" class="form-label fw-semibold text-secondary">ชื่อของคุณ<span class="text-danger">*</span></label>
+          <input type="text"
+          class="form-control form-control-lg custom-input"
+          placeholder="กรุณากรอกชื่อจริง"
+          required> <div class="invalid-feedback">
+            กรุณากรอกชื่อของคุณ
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label for="email" class="form-label fw-semibold text-secondary">อีเมล</label>
+            <input type="email"
+            class="form-control form-control-lg custom-input"
+            placeholder="example@email.com">
+            <div class="invalid-feedback">
+              กรุณากรอกอีเมลให้ถูกต้อง
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label for="comment" class="form-label fw-semibold text-secondary">ความคิดเห็น<span class="text-danger">*</span></label>
+            <textarea class="form-control custom-textarea"
+            id="comment"
+            rows="5"
+            placeholder="เขียนความคิดเห็นที่นี่..."
+            required></textarea> <div class="invalid-feedback">
+              กรุณากรอกความคิดเห็นของคุณ
+            </div>
+          </div>
+          
+          <div class="d-grid">
+            <button type="submit"
+            class="btn btn-primary btn-lg rounded-pill py-2 fw-bold shadow-sm custom-btn">
+            <i class="bi bi-send-fill me-2"></i>ส่งความคิดเห็น
+          </button>
+                </div>
+                
+                <p class="text-muted text-center mt-3 small">
+                  <i class="bi bi-lock-fill me-1"></i>เราไม่เปิดเผยอีเมลของคุณกับบุคคลอื่น
+                </p>
+        </form>
+      </section>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="mt-5 pt-4 border-top">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+      <!-- Contact Info -->
+      <div class="mb-4 mb-md-0">
+        <h5 class="fw-bold mb-3 text-white">Contact Us</h5>
+        <p class="small text-white">
+          บริษัท คุนคุง มีเดีย จำกัด (สำนักงานใหญ่)<br>
+          เลขที่ 528 มิลเลนเนียม ทาวเวอร์ 9 ชั้นเลขที่ 3453 – 3460<br>
+          ชั้น 50 ถนนสุขุมวิท แขวงคลองตันเหนือ เขตวัฒนา<br>
+          กรุงเทพฯ 10330<br>
+          เลขประจำตัวผู้เสียภาษี: 998547893068
+              </p>
+              <div class="mt-2">
+                <i class="bi bi-facebook social-icon me-3 text-white"></i>
+                <i class="bi bi-line social-icon me-3 text-white"></i>
+                <i class="bi bi-instagram social-icon me-3 text-white"></i>
+                <i class="bi bi-twitter-x social-icon me-3 text-white"></i>
+              </div>
+            </div>
+      
+            <!-- Google Map -->
+            <div>
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.719759046183!2d100.58304852360637!3d13.855853094878942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d3b2deb49ff%3A0xd2ed4165c39645cc!2sSripatum%20University!5e0!3m2!1sen!2sth!4v1744962405315!5m2!1sen!2sth" 
+                width="300" 
+                height="250" 
+                style="border:0; border-radius: 10px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="/index.js"></script>
+    </body>
+    </html>

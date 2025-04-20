@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ชิมไปเรื่อย</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link href="/index.css" rel="stylesheet">
+    <!--icon-->
+    <link rel="icon" href="/Logo/1000052579.jpg" type="image/png">
+</head>
+
+<!-- Header Section -->
+<body class="p-3">
+    <header class="mb-4">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="/index.html">
+                    <img src="/Logo/1000052579.jpg" 
+                    alt="logo" 
+                    class="img-fluid" 
+                    style="width: 80px; height: auto; border-radius: 20%;">
+                </a>
+            </div>
+  
+            <!-- Search Box -->
+            <div class="position-relative flex-grow-1 mx-3">
+                <input type="text" 
+                       class="form-control search-box" 
+                       placeholder="🔍 ค้นหาร้านอาหารหรือเมนูโปรด...">
+            </div>
+  
+            <!-- Right Side Group -->
+            <div class="d-flex align-items-center gap-3">
+                <!-- ปุ่มตำแหน่ง -->
+                <button class="btn btn-outline-light rounded-pill px-4">
+                    <i class="bi bi-geo-alt me-2"></i>เลือกตำแหน่ง
+                </button>
+                
+            <!-- ตะกร้าสินค้า -->
+                <div class="cart-icon position-relative">
+                  <a href="/market.html" 
+                     class="btn btn-outline-light rounded-circle p-2 d-inline-flex align-items-center justify-content-center"
+                     style="width: 40px; height: 40px;"> 
+                      <i class="bi bi-cart3"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" 
+                            style="font-size: 0.6em; padding: 0.35em 0.5em;">
+                          3
+                          <span class="visually-hidden">จำนวนสินค้า</span>
+                      </span>
+                  </a>
+              </div>
+            </div>
+        </div>
+    </header>
+
+<!--รายการสินค้า-->
+    <div class="container py-5 bg-white" style="border-radius: 2%;">
+        <div class="row gy-4"> <div class="col-lg-8">
+                <h4 class="mb-3 text-dark text-center"><b>รายการสินค้าในตะกร้า</b></h4> 
+                <!--รายการสินค้าที่ 1-->
+                <div class="card mb-3 p-3 product-card d-flex flex-row align-items-center shadow-sm"> 
+                    <img src="/menu/menu1.png" class="me-3 rounded" alt="น้ำมันเครื่อง" style="width: 80px; height: 100px; object-fit: contain;"> 
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">มัสมั่นไก่</div>
+                        <div class="text-muted small">รหัสสินค้า: CST-9OP4-1L</div>
+                        <button class="btn btn-sm btn-outline-danger mt-1 py-0 px-1"><i class="bi bi-x-lg"></i> ลบ</button>
+                    </div>
+                    <div class="text-end ms-2"> 
+                    <div class="price-text fw-semibold">400</div> 
+                    <div class="text-dark  fw-semibold">1</div>
+                    </div>
+                </div>
+    
+                <!--รายการสินค้าที่ 2-->
+                <div class="card mb-3 p-3 product-card d-flex flex-row align-items-center shadow-sm">
+                    <img src="/menu/menu2.jpg" class="me-3 rounded" alt="มัสมันไก่" style="width: 80px; height: 100px; object-fit: contain;">
+                     <div class="flex-grow-1">
+                        <div class="fw-bold">ข้าวผัดอเมริกัน</div>
+                        <div class="text-muted small">รหัสสินค้า: BRM-FGD-001</div>
+                        <button class="btn btn-sm btn-outline-danger mt-1 py-0 px-1"><i class="bi bi-x-lg"></i> ลบ</button>
+                    </div>
+                    <div class="text-end ms-2">
+                        <div class="price-text fw-semibold">฿800</div>
+                        <div class="text-dark  fw-semibold">2</div>
+                    </div>
+                </div>
+    
+                <!--รายการสินค้าที่ 3-->
+                <div class="card mb-3 p-3 product-card d-flex flex-row align-items-center shadow-sm">
+                    <img src="/menu/menu3.jpg" class="me-3 rounded" alt="แบตเตอรี่" style="width: 80px; height: 100px; object-fit: contain;">
+                     <div class="flex-grow-1">
+                        <div class="fw-bold">กระเพราไก่ไข่ดาว</div>
+                        <div class="text-muted small">รหัสสินค้า: 3K-NDFG-45</div>
+                         <button class="btn btn-sm btn-outline-danger mt-1 py-0 px-1"><i class="bi bi-x-lg"></i> ลบ</button>
+                    </div>
+                    <div class="text-end ms-2">
+                        <div class="price-text fw-semibold">฿400</div>
+                        <div class="text-dark  fw-semibold">1</div>
+                    </div>
+                </div>
+    
+                <div class="d-flex justify-content-between align-items-center mt-4"> <button class="btn btn-outline-primary">
+                       <i class="bi bi-arrow-left"></i> เลือกสินค้าเพิ่ม
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <i class="bi bi-trash"></i> ล้างตะกร้าทั้งหมด
+                    </button>
+                </div>
+            </div>
+    
+            <div class="col-lg-4">
+                <div class="bg-light p-4 rounded"> <h5 class="text-dark mb-4 fw-bold">สรุปคำสั่งซื้อ</h5> 
+
+                 <!--สินค้าที่ 1-->
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">มัสมั่นไก่</span> 
+                        <span class="text-dark fw-medium">฿400</span> 
+                    </div>
+
+                 <!--สินค้าที่ 2-->
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">ข้าวผัดอเมริกัน</span>
+                        <span class="text-dark fw-medium">฿800</span>
+                    </div>
+
+                 <!--สินค้าที่ 3-->
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">กระเพราไก่ไข่ดาว</span>
+                        <span class="text-dark fw-medium">฿400</span>
+                    </div>
+    
+                    <hr class="my-3">
+    
+                    <div class="d-flex justify-content-between fw-bold mb-3">
+                        <span class="text-dark">ยอดรวม (3 รายการ)</span>
+                        <span class="text-primary h5 mb-0">฿1,600</span> </div>
+    
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="กรอกโค้ดส่วนลด">
+                      <button class="btn btn-outline-secondary" type="button">ใช้โค้ด</button>
+                    </div>
+    
+                    <div class="mt-4">
+                        <h6 class="text-secondary fw-bold"><i class="bi bi-credit-card"></i> ช่องทางการชำระเงิน</h6>
+                        <ul class="list-unstyled mb-0 small text-muted mt-2">
+                            <li><i class="bi bi-bank me-1"></i> โอนผ่านธนาคาร</li>
+                            <li><i class="bi bi-phone me-1"></i> พร้อมเพย์</li>
+                            <li><i class="bi bi-cash me-1"></i> ชำระเงินปลายทาง (อาจมีค่าธรรมเนียม)</li>
+                            <li><i class="bi bi-credit-card-2-front me-1"></i> บัตรเครดิต/เดบิต (เร็วๆ นี้)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+     
+    <!-- Footer -->
+    <footer class="mt-5 pt-4 border-top">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
+                <!-- Contact Info -->
+                <div class="mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3 text-white">Contact Us</h5>
+                    <p class="small text-white">
+                        บริษัท คุนคุง มีเดีย จำกัด (สำนักงานใหญ่)<br>
+                        เลขที่ 528 มิลเลนเนียม ทาวเวอร์ 9 ชั้นเลขที่ 3453 – 3460<br>
+                        ชั้น 50 ถนนสุขุมวิท แขวงคลองตันเหนือ เขตวัฒนา<br>
+                        กรุงเทพฯ 10330<br>
+                        เลขประจำตัวผู้เสียภาษี: 998547893068
+                    </p>
+                <div class="mt-2">
+                    <i class="bi bi-facebook social-icon me-3 text-white"></i>
+                    <i class="bi bi-line social-icon me-3 text-white"></i>
+                    <i class="bi bi-instagram social-icon me-3 text-white"></i>
+                    <i class="bi bi-twitter-x social-icon me-3 text-white"></i>
+                </div>
+            </div>
+            
+              <!-- Google Map -->
+              <div>
+                  <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.719759046183!2d100.58304852360637!3d13.855853094878942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d3b2deb49ff%3A0xd2ed4165c39645cc!2sSripatum%20University!5e0!3m2!1sen!2sth!4v1744962405315!5m2!1sen!2sth" 
+                  width="300" 
+                  height="250" 
+                  style="border:0; border-radius: 10px;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+          </div>
+        </footer>
+
+</body>
+</html>
